@@ -4,46 +4,29 @@ India Crime Insights is an interactive dashboard that provides insights into cri
 
 Features
 Dynamic filters for year, state/UT, and crime type.
-
 Visualizations like line charts, bar charts, pie charts, and maps.
-
 Insights into crime trends, locations, and demographics.
 
 Technologies Used
 Python
-
 Streamlit
-
 Plotly
-
 Pandas
 
 Setup
 Clone the repository:
+git clone https://github.com/Varunkaushik2004/India-Crime-Insights-A-Data-Driven-Dashboard.git
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/india-crime-insights.git
 Install dependencies:
-
-bash
-Copy
-Edit
 pip install -r requirements.txt
-Run the app:
 
-bash
-Copy
-Edit
+Run the app:
 streamlit run app.py
+
 Data Pipeline
 The data pipeline processes and cleans raw crime data, generating insights and preparing the data for visualizations.
 
 Folder Structure
-bash
-Copy
-Edit
 /India Crime Insights
 ├── data/
 │   ├── raw/                  # Raw data
