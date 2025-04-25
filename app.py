@@ -3,6 +3,14 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import subprocess
+
+if st.sidebar.button("🔄 Re-run Pipeline"):
+    with st.spinner("Cleaning latest data..."):
+        subprocess.run(["python", "pipeline.py"])
+        st.success("Pipeline re-executed. Latest data is now loaded!")
+        st.cache_data.clear()  # Clear cache to reload fresh data
+        st.rerun()
 
 # Load cleaned data
 @st.cache_data
