@@ -5,7 +5,7 @@ import pandas as pd
 import plotly.express as px
 import subprocess
 
-if st.sidebar.button("🔄 Re-run Pipeline"):
+if st.sidebar.button("🔄 Refresh "):
     with st.spinner("Cleaning latest data..."):
         subprocess.run(["python", "pipeline.py"])
         st.success("Pipeline re-executed. Latest data is now loaded!")
