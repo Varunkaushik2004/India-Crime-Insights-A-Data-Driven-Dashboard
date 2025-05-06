@@ -45,6 +45,8 @@ def clean_individual_df(df):
 
     df = df.drop_duplicates()
     return df
+    
+    
 
 
 def merge_and_clean_all(input_folder, output_file):
